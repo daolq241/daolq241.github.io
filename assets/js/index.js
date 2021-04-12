@@ -26,23 +26,23 @@ function showHideNav() {
         content.classList.toggle('content-width')
     }
 
-    if (window.innerWidth <= 1023) {
-        overlay.style.display = 'block'
+    // if (window.innerWidth <= 1023) {
+    //     overlay.style.display = 'block'
 
-        // navBig.style.top = 0
-        navHeaderId.style.display = 'block'
-        navBig.style.display = 'block'
-        navBig.style.top = 0
+    //     // navBig.style.top = 0
+    //     navHeaderId.style.display = 'block'
+    //     navBig.style.display = 'block'
+    //     // navBig.style.top = 0
 
 
 
-        window.onclick = function (event) {
-            if (event.target == overlay) {
-                overlay.style.display = "none";
-                navHeaderId.display = 'none'
-                navBig.style.display = 'none'
-            }
-        }
-    }
+    //     window.onclick = function (event) {
+    //         if (event.target == overlay) {
+    //             overlay.style.display = "none";
+    //             navHeaderId.display = 'none'
+    //             navBig.style.display = 'none' 
+    //         }
+    //     }
+    // }
 
 }
