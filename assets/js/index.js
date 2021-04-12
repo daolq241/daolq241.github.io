@@ -32,6 +32,8 @@ function showHideNav() {
         // navBig.style.top = 0
         navHeaderId.style.display = 'block'
         navBig.style.display = 'block'
+        navBig.style.top = 0
+
 
 
         window.onclick = function (event) {
