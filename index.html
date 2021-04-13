@@ -25,19 +25,18 @@
 
 <body>
     <div class="app" id="app">
-        <!-- Overlay -->
-        <div class="overlay" id="overlay">
+    
 
-        </div>
         <!-- Header -->
         <header class="header">
             <div class="header__wrapper">
                 <!-- Header-left -->
                 <div class="header__left">
-                    <span href="" class="button" id="toggle" onclick="showHideNav()">
-                        <i class="icon header__left-bar-icon fas fa-bars"></i>
-
-                    </span>
+                    <label for="inputId">
+                        <span href="" class="button" id="toggle" onclick="showHideNav()">
+                            <i class="icon header__left-bar-icon fas fa-bars"></i>
+                        </span>
+                    </label>
                     <div class="header__left-logo">
                         <svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false"
                             class="header__left-logo-icon style-scope yt-icon"
@@ -154,16 +153,21 @@
                 </div>
                 <!-- end Nav mini -->
 
-
+    <!-- Overlay -->
+    <input type="checkbox" hidden id="inputId" class="input-check" >
+    <label class="overlay" id="overlay" for="inputId"></label>
                 <!-- Nav big -->
                 <div class="nav nav-big" id="navBig">
                     <div class="nav-section nav-section-header" id="nav-section-header" >
                         <div class="nav__header">
                             <ul class="nav__header-list">
                                 <li class="item nav__header-item">
-                                    <span href="" class="button" id="toggle">
-                                        <i class="icon fas fa-bars"></i>
-                                    </span>
+                                    <label for="inputId">
+                                        <span href="" class="button" id="toggle">
+                                            <i class="icon fas fa-bars"></i>
+                                        </span>
+
+                                    </label>
                                     <div class="nav__header-logo header__left-logo">
                                         <svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false"
                                             class="header__left-logo-icon style-scope yt-icon"

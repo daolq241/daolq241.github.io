@@ -21,7 +21,8 @@ function showHideNav() {
         navBig.classList.toggle('show')
 
         // navHeaderId.style.display = 'none'  
-        navBigId.style.top = '56px'
+        // navBigId.style.top = '56px'
+        navBig.classList.toggle('margin-top')
         navBig.classList.toggle('nav-width-big')
         content.classList.toggle('content-width')
     }
@@ -30,8 +31,8 @@ function showHideNav() {
     //     overlay.style.display = 'block'
 
     //     // navBig.style.top = 0
-    //     navHeaderId.style.display = 'block'
-    //     navBig.style.display = 'block'
+    //     // navHeaderId.style.display = 'block'
+    //     // navBig.style.display = 'block'
     //     // navBig.style.top = 0
 
 
@@ -39,8 +40,8 @@ function showHideNav() {
     //     window.onclick = function (event) {
     //         if (event.target == overlay) {
     //             overlay.style.display = "none";
-    //             navHeaderId.display = 'none'
-    //             navBig.style.display = 'none' 
+    //             // navHeaderId.display = 'none'
+    //             // navBig.style.display = 'none' 
     //         }
     //     }
     // }
