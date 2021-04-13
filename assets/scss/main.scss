@@ -550,17 +550,17 @@ a {
     top: 56px;
 }
 
- 
 /*========== Media Query ==========*/
 
 @media (min-width: 740px) and (max-width: 1023px) {
-    // :root {
-    //     --nav-width: 0;
-    // }
-    // #nav {
-    //     display: none;
-    //     // margin: auto;
-    // }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0.5;
+        }
+    }
 
     .nav {
         width: 240px;
@@ -579,6 +579,8 @@ a {
         display: block;
         left: -300px;
         top: 0;
+        transition: all linear 0.2s;
+        
     }
 
     #content {
@@ -594,36 +596,34 @@ a {
         }
     }
 
-   /* Overlay */
-   #overlay {
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 300;
-    // cursor: pointer;
-  }
+    /* Overlay */
+    #overlay {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 300;
+        animation: fadeIn linear 0.2s;
+        // cursor: pointer;
+    }
 
-  .input-check {
-      position: fixed;
-  }
-  .input-check:checked ~ #overlay {
-      display: block;
-  }
-  .input-check:checked ~ #navBig {
-      left: 0;
-      z-index: 9999;
-  }
-
-    
+    .input-check {
+        position: fixed;
+    }
+    .input-check:checked ~ #overlay {
+        display: block;
+    }
+    .input-check:checked ~ #navBig {
+        left: 0;
+        z-index: 9999;
+    }
 }
 
 /* Mobile */
 @media (max-width: 739px) {
-
     .nav {
         width: 240px;
         z-index: 100;
@@ -636,11 +636,11 @@ a {
         display: block;
     }
 
-  
     .nav-big {
         display: block;
         left: -300px;
         top: 0;
+        transition: all linear 0.2s;
     }
 
     #content {
@@ -655,29 +655,29 @@ a {
         display: none;
     }
 
+    /* Overlay */
+    #overlay {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 300;
+        animation: fadeIn linear 0.2s;
 
+        // cursor: pointer;
+    }
 
-       /* Overlay */
-   #overlay {
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 300;
-    // cursor: pointer;
-  }
-
-  .input-check {
-      position: fixed;
-  }
-  .input-check:checked ~ #overlay {
-      display: block;
-  }
-  .input-check:checked ~ #navBig {
-      left: 0;
-      z-index: 9999;
-  } 
+    .input-check {
+        position: fixed;
+    }
+    .input-check:checked ~ #overlay {
+        display: block;
+    }
+    .input-check:checked ~ #navBig {
+        left: 0;
+        z-index: 9999;
+    }
 }
